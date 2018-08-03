@@ -31,13 +31,13 @@ public enum MenuItemDisplayMode {
 }
 
 public struct MenuItemText {
-    let text: String
+    let text: NSAttributedString
     let color: UIColor
     let selectedColor: UIColor
     let font: UIFont
     let selectedFont: UIFont
     
-    public init(text: String = "Menu",
+    public init(text: NSAttributedString = NSAttributedString(string: "Menu"),
                 color: UIColor = UIColor.lightGray,
                 selectedColor: UIColor = UIColor.black,
                 font: UIFont = UIFont.systemFont(ofSize: 16),
